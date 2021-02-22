@@ -1,0 +1,93 @@
+/*.text {
+    font: color blue;
+    background-color: orange;
+    opacity: 0.8;
+}
+*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30vh;
+    
+    
+    
+    
+}
+
+button {
+    color: rgb(13, 133, 133);
+    border:peru;
+    font-size:150%;
+    font-family: 'JetBrains Mono', monospace;
+    
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    font-family: 'JetBrains Mono', monospace;
+    color: rgb(19, 13, 58);
+    height: 40%;
+}
+
+.button1 {
+    color: rgb(175, 33, 52);
+    width: 400px;
+    background-color: rgb(209, 218, 193);
+    cursor: pointer;
+    height: 100px;
+}
+
+.button2 {
+    color: rgb(212, 52, 212);
+    width:400px;
+    background-color: rgb(209, 218, 193);
+    cursor: pointer;
+    height:100px;
+}
+
+.button3 {
+    color: rgb(30, 146, 146);
+    width: 400px;
+    background-color: rgb(209, 218, 193);
+    cursor:pointer;
+    height:100px;
+}
+
+.game {
+    
+}
+
+.button:hover {
+    background-color: greenyellow;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    height: 5vh;
+    flex-direction: row;
+    font-family: 'JetBrains Mono', monospace;
+    
+    
+    
+    
+
+}
+
+.flex {
+    
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    font-family: 'JetBrains Mono', monospace;
+
+
+}
