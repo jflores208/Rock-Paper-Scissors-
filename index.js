@@ -99,7 +99,7 @@ function rps () {
 }
 */
 
-function playAgainstRock (choice) {
+/*function playAgainstRock (choice) {
     if (choice==='rock') {
         return "tie";
     }
@@ -111,9 +111,12 @@ function playAgainstRock (choice) {
     }
 }
 console.log("tie");
-
+*/
 
 function myPlayers (player1, player2) {
+
+
+
     if (player1==='rock')  {
         if (player2==='scissors'){
             return 'player 1 wins';
@@ -151,8 +154,49 @@ function myPlayers (player1, player2) {
     
 
     
-     else if (player1===player2) {
+      if (player1===player2) {
         return "tie"; }
 
         }
-    ß
+    
+
+        //function logValue (event) {
+             //   console.log(event.target.value);
+       // }
+
+        function playGame (event) {
+            let userChoice = event.target.value;
+
+            let options= ["rock","paper","scissors"];
+
+            let randomIndex= Math.floor(Math.random() * options.length);
+
+            let computerChoice= options[randomIndex];
+
+
+            let winner= myPlayers(userChoice, computerChoice);
+            //console.log(event.target.value);
+            let userChoiceText= `The user chose ${userChoice}\n`;
+            let computerChoiceText = `The computer chose ${computerChoice}\n`;
+
+            let finalText = userChoiceText + computerChoiceText + winner;
+
+            let  winnerLocation= document.querySelector(".text");
+            winnerLocation.innerText = finalText;
+        }
+
+        
+
+        let buttons = document.getElementsByClassName("button");
+
+        for (let i=0; i<buttons.length; i++) {
+            console.log(buttons[i]);
+            let button= buttons[i];
+
+            button.onclick = playGame;
+
+            }
+        
+
+
+
